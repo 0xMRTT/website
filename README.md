@@ -1,6 +1,6 @@
-# Content v2 Minimal Starter
+# 0xMRTT's website
 
-Look at the [Content documentation](https://content-v2.nuxtjs.org/) to learn more.
+It's made with nuxtjs and nuxt content
 
 ## Setup
 
