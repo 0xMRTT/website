@@ -1,5 +1,6 @@
 ---
 title: "TITLE"
+description: Launching my blog
 ---
 
 # Nuxt Content
