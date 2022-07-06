@@ -7,5 +7,13 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     '@nuxtjs/tailwindcss'
   ],
-  components: true
+  components: true,
+  tailwindcss: {
+    jit: true,
+    // add '~tailwind.config` alias
+    exposeConfig: true
+  },
+  colorMode: {
+    classSuffix: ""
+  }
 })
