@@ -18,9 +18,9 @@
 
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal p-0">
-                    <li><a>Blog</a></li>
+                    <li><a href="/blog">Blog</a></li>
                     <li tabindex="0">
-                        <a>
+                        <a href="/projects">
                             Projects
                             <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 viewBox="0 0 24 24">
@@ -28,11 +28,11 @@
                             </svg>
                         </a>
                         <ul class="p-2">
-                            <li><a>CRS</a></li>
-                            <li><a>Others</a></li>
+                            <li><a href="/projects/crs">CRS</a></li>
+                            <li><a href="/projects">Others</a></li>
                         </ul>
                     </li>
-                    <li><a>About</a></li>
+                    <li><a href="/about">About</a></li>
                 </ul>
             </div>
 
