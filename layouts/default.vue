@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="navbar bg-base-300 rounded-box">
+        <div class="navbar bg-base-300 rounded-box  ">
             <div class="navbar-start">
                 <div class="dropdown">
                     <div class="flex-1 px-2 lg:flex-none">
@@ -75,7 +75,7 @@
             </div>
         </div>
 
-        <div>
+        <div class="py-5 px-7">
             <slot />
         </div>
 
