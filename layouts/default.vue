@@ -5,7 +5,7 @@
                 <NuxtLink to="/">
                 <div class="avatar">
                     <div class="w-11 rounded-full">
-                        <img src="https://avatars.githubusercontent.com/0xMRTT" />
+                        <img src="https://avatars.githubusercontent.com/0xMRTT" alt="0xMRTT" />
                     </div>
                 </div>
                 </NuxtLink>
