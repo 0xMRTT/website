@@ -7,12 +7,13 @@
             <div class="flex justify-end flex-1 px-2">
                 <div class="flex items-stretch">
                     <div class="dropdown dropdown-end">
-                        <label tabindex="0" class="btn btn-ghost rounded-btn">Color</label>
+                        <label tabindex="0" class="btn btn-ghost rounded-btn">{{ $colorMode.preference }}</label>
                         <ul tabindex="0" class="menu dropdown-content p-2 shadow bg-base-100 rounded-box w-52 mt-4">
                             <li v-for="color of ['system', 'light', 'dark']" :key="color" :class="{
                                 preferred: !$colorMode.unknown && color === $colorMode.preference,
                                 selected: !$colorMode.unknown && color === $colorMode.value,
                             }">
+                            
                                 <p @click="$colorMode.preference = color">{{ color }}</p>
                             </li>
                         </ul>
