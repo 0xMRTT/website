@@ -8,12 +8,4 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss'
   ],
   components: true,
-  tailwindcss: {
-    jit: true,
-    // add '~tailwind.config` alias
-    exposeConfig: true
-  },
-  colorMode: {
-    classSuffix: ""
-  }
 })
