@@ -9,7 +9,7 @@
                     <div class="dropdown dropdown-end">
                         <label tabindex="0" class="btn btn-ghost rounded-btn">Color</label>
                         <ul tabindex="0" class="menu dropdown-content p-2 shadow bg-base-100 rounded-box w-52 mt-4">
-                            <li v-for="color of ['system', 'light', 'dark', 'sepia']" :key="color" :class="{
+                            <li v-for="color of ['system', 'light', 'dark']" :key="color" :class="{
                                 preferred: !$colorMode.unknown && color === $colorMode.preference,
                                 selected: !$colorMode.unknown && color === $colorMode.value,
                             }">
