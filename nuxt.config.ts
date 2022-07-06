@@ -8,4 +8,8 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss'
   ],
   components: true,
+  colorMode: {
+    preference: 'dark', // default theme
+    dataValue: 'theme', // activate data-theme in <html> tag
+  },
 })
