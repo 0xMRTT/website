@@ -7,7 +7,7 @@ const { data } = await useAsyncData(route.path, () => queryContent(route.path).f
   <article>
     <h1>{{ data.title }}</h1>
     <p>{{ data.description }}</p>
-    <ContentRenderer :value="data">
+    <ContentRenderer :value="data" class="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto">
       <template #empty>        
         <p>No content found.</p>      
       </template>
@@ -18,3 +18,11 @@ const { data } = await useAsyncData(route.path, () => queryContent(route.path).f
     </ContentRenderer>
   </article>
 </template>
+
+
+<style>
+h2 {
+  initial-letter: L;
+  height:35px;
+}
+</style>
