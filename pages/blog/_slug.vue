@@ -39,7 +39,7 @@ export default {
             </article>
             </div>
 
-            <div class="divider"></div> 
+            <div class="divider lg:divider-horizontal"></div> 
 
             <div class="flex-none">
                 <ul class="menu  w-56 p-2 rounded-box">
