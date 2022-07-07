@@ -17,6 +17,14 @@ export default {
 
 
 <template>
+    <div>
+        <div class="text-sm breadcrumbs">
+  <ul>
+    <li><a href="/">Home</a></li> 
+    <li><a href="/blog">Blog</a></li> 
+    <li><a href="#">{{article.title}}</a></li>
+  </ul>
+</div>
     <article>
         <nav>
             <ul>
@@ -33,6 +41,7 @@ export default {
 
         <nuxt-content :document="article" />
     </article>
+    </div>
 </template>
 
 <style>
