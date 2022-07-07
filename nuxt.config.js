@@ -1,5 +1,4 @@
-import theme from '@nuxt/content-theme-docs'
-export default theme({
+export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: '0xMRTT',
@@ -58,4 +57,4 @@ export default theme({
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }
-})
+}
