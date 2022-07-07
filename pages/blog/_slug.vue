@@ -19,28 +19,28 @@ export default {
 <template>
     <div>
         <div class="text-sm breadcrumbs">
-  <ul>
-    <li><a href="/">Home</a></li> 
-    <li><a href="/blog">Blog</a></li> 
-    <li><a href="#">{{article.title}}</a></li>
-  </ul>
-</div>
-    <article>
-        <nav>
             <ul>
-                <li v-for="link of article.toc" :key="link.id">
-                    <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
-                </li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="#">{{ article.title }}</a></li>
             </ul>
-        </nav>
+        </div>
+        <article>
+            <nav>
+                <ul>
+                    <li v-for="link of article.toc" :key="link.id">
+                        <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
+                    </li>
+                </ul>
+            </nav>
 
-        <h1 class="text-3xl font-bold underline">{{ article.title }}</h1>
-        <p>{{ article.description }}</p>
-        <img :src="article.img" :alt="article.alt" />
-        <p>Article last updated: {{ formatDate(article.updatedAt) }}</p>
+            <h1 class="text-3xl font-bold underline">{{ article.title }}</h1>
+            <p>{{ article.description }}</p>
+            <img :src="article.img" :alt="article.alt" />
+            <p>Article last updated: {{ formatDate(article.updatedAt) }}</p>
 
-        <nuxt-content :document="article" />
-    </article>
+            <nuxt-content :document="article" />
+        </article>
     </div>
 </template>
 
