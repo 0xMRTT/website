@@ -1,7 +1,7 @@
-import { defineNuxtConfig } from 'nuxt'
+import theme from "@nuxt/content-theme-docs";
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
-export default defineNuxtConfig({
+export default theme({
   modules: [
     '@nuxt/content',
     "@nuxtjs/color-mode",
