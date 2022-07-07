@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="h-full w-full dark:bg-base-100 bg-stone-300 dark:text-white text-black">
         <div class="navbar dark:bg-base-300 rounded-box">
             <div class="navbar-start">
                 <div class="dropdown">
@@ -28,7 +28,7 @@
 
                 <div class="flex justify-end flex-1 px-2">
                     <div class="flex items-stretch">
-                        <div class="dropdown dropdown-end">
+                        <div class="dropdown dropdown-end dark:bg-base-100 bg-stone-300 dark:text-white text-black">
                             <label tabindex="0" class="btn btn-ghost rounded-btn">
                                 <p v-if="$colorMode.preference == 'system'"><svg xmlns="http://www.w3.org/2000/svg"
                                         class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
@@ -50,7 +50,7 @@
                                     </svg></p>
                             </label>
                             <ul tabindex="0" class="menu dropdown-content p-2 shadow bg-base-100 rounded-box w-52 mt-4">
-                                <li v-for="color of ['system', 'light', 'dark']" :key="color" :class="{
+                                <li class="text-white" v-for="color of ['system', 'light', 'dark']" :key="color" :class="{
                                     preferred: !$colorMode.unknown && color === $colorMode.preference,
                                     selected: !$colorMode.unknown && color === $colorMode.value,
                                 }">
