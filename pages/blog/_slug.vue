@@ -25,22 +25,30 @@ export default {
                 <li><a href="#">{{ article.title }}</a></li>
             </ul>
         </div>
-        <article>
-            <nav>
-                <ul>
+
+        <div class="flex">
+            <div class="flex-1">
+            <article>
+                
+                <h1 class="text-3xl font-bold underline">{{ article.title }}</h1>
+                <p>{{ article.description }}</p>
+                <img :src="article.img" :alt="article.alt" />
+                <p>Article last updated: {{ formatDate(article.updatedAt) }}</p>
+
+                <nuxt-content :document="article" />
+            </article>
+            </div>
+
+            <div class="divider"></div> 
+
+            <div class="flex-none">
+                <ul class="menu  w-56 p-2 rounded-box">
                     <li v-for="link of article.toc" :key="link.id">
                         <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
                     </li>
                 </ul>
-            </nav>
-
-            <h1 class="text-3xl font-bold underline">{{ article.title }}</h1>
-            <p>{{ article.description }}</p>
-            <img :src="article.img" :alt="article.alt" />
-            <p>Article last updated: {{ formatDate(article.updatedAt) }}</p>
-
-            <nuxt-content :document="article" />
-        </article>
+            </div>
+        </div>
     </div>
 </template>
 
