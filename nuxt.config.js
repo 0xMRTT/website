@@ -65,5 +65,8 @@ export default {
         autoprefixer: {},
       },
     },
+  },
+  colorMode: {
+    classSuffix: ''
   }
 }
