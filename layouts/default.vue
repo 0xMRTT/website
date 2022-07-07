@@ -14,7 +14,7 @@
                     </div>
                 </div>
 
-            </div>
+            </div>blog/hello#displaying-content
 
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal p-0">
@@ -76,7 +76,7 @@
         </div>
 
         <div class="py-5 px-7">
-            <slot />
+            <Nuxt />
         </div>
 
 
